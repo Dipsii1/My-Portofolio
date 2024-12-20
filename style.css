@@ -1,0 +1,697 @@
+:root {
+    --color-primary: #0B192C; /* Warna utama */
+    --color-secondary: #3a5574; /* Warna sekunder */
+    --color-tertiary: #1E3E62; /* Warna tambahan */
+    --color-quartery: #fff;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #1E3E62;
+    background-color:  whitesmoke;
+    transition:  transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navbar Start */
+.navbar-container {
+    background: var(--color-primary);
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    z-index: 1;
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--color-quartery);
+    margin: 30px;
+}
+
+nav {
+    position: absolute;
+    top: 15px;
+    right: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-quartery);
+}
+
+nav a:hover {
+    color: #3a5574;
+}
+
+.switch {
+    position: fixed;
+    top: 32px;
+    right: 420px;
+    display: inline-block;
+    width: 45px;
+    height: 17px;
+    z-index: 1;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-tertiary);
+    transition: 0.4s;
+    border-radius: 34px;
+    z-index: 1;
+}
+
+.slider:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "";
+    height: 13px;
+    width: 13px;
+    background-color:whitesmoke ;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--color-tertiary);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Navbar End */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Poppins", serif;
+}
+
+.main-container h1 {
+    font-weight: bold;
+    font-size: 30px;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    margin-top: 335px;
+    margin-left: 300px;
+}
+
+.main-container h2 {
+    font-weight: bold;
+    font-size: 30px;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    margin-left: 300px;
+}
+
+.main-container article {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    margin-left: 300px;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn-CV{
+    text-decoration: none;
+    background-color: #0B192C;
+    color: #fff;
+    padding: 14px;
+    border-radius: 13px;
+    font-size: 12px;
+    border: 3px solid black;
+    margin-left: 300px;
+    margin-top: 10px;
+    transition:background-color 0.8s ease, color 0.8s ease;
+}
+
+.btn-CV:hover {
+    color: #1E3E62;
+    background-color: whitesmoke;
+}
+
+
+.social-icons {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 315px;
+    left: 200px;
+    font-size: 25px;
+}
+
+.social-icons ul {
+    list-style-type: none;
+}
+
+.social-icons li {
+    margin: 20px;
+}
+
+.social-icons a {
+    font-size: 25px;
+    color: var(--color-primary);
+    transition:background-color 0.2s ease, color 0.2s ease;
+}
+.social-icons a:hover {
+    color: var(--color-secondary);
+}
+
+/* Place Screen End */
+
+/* Section Skill Start */
+
+.Skills-Container {
+    display: block;
+    text-align: center;
+    margin-top: 20em;
+    color: var(--color-quartery);
+    background: var(--color-primary);
+}
+
+.Skills-Container h1 {
+    position: relative;
+    top: 100px;
+}
+.Skills-Container p{
+    position: relative;
+    top: 100px;
+}
+
+.Skill-Card {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 150px;
+    gap: 100px;
+}
+
+
+.skill-card-1 {
+    background-color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.skill-card-2 {
+    background-color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.skill-card-3 {
+    background-color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+}
+.skill-card-4 {
+    background-color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+}
+.skill-card-5 {
+    background-color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+}
+.skill-card-6 {
+    background-color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+}
+.skill-card-7 {
+    background-color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+}
+.skill-card-8 {
+    background-color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;    
+}
+
+
+
+.skill-card-1:hover, .skill-card-2:hover, .skill-card-3:hover, .skill-card-4:hover, .skill-card-5:hover:hover, .skill-card-6:hover, .skill-card-7:hover, .skill-card-8:hover {
+    transform: scale(1.2);
+}
+
+/* Section Skill End */
+
+/* Section Project Start */
+
+.Project-Container {
+    display: block;
+    text-align: center;
+    margin-top: 10em;
+}
+
+.Card-Project {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+.Card-Project h5, .card-text {
+    color: var(--color-quartery);
+}
+
+.card-body {
+    background: var(--color-tertiary);
+}
+
+.btn-project {
+    background-color: var(--color-primary);
+    color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}   
+
+.btn-project:hover {
+    color: var(--color-primary);
+    background-color: var(--color-quartery);
+}
+/* Section Project End */
+
+
+/* Contact Start */ 
+
+.Container-Contact {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10em;
+}
+
+.Container-Contact h1 {
+    margin-left: 650px;
+}
+.Container-Contact p {
+    margin-left: 500px;
+}
+
+.contact-form {
+    margin-top: 100px;
+}
+
+.form-floating {
+    margin-left: 100px;
+    width: 50%;
+}
+
+.btn-submit {
+    margin-left: 100px  ;
+    background-color: var(--color-primary);
+    color: var(--color-quartery);
+    padding: 10px;
+    border-radius: 9px;
+    border: 2px solid var(--color-primary);
+    margin-top: 10px;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.btn-submit:hover {
+    color: var(--color-primary);
+    background-color: var(--color-quartery);
+}
+
+.Side-Contact-Container {
+    position: relative;
+    top: -300px;
+    text-align: center;
+    margin-left: 60em;
+}
+
+.Side-Contact {
+    background-color: var(--color-primary);
+    color: var(--color-quartery);
+    border-radius: 15px;
+    width: 90%;
+    padding: 30px;
+}
+
+.Side-Email {
+    font-weight: bold;
+}
+
+.Side-Whatsapp {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* Contact end */
+
+.Sidebar{
+    display: none;
+}
+
+/* Dark Mode Start */
+body.dark-mode {
+    background-color: var(--color-primary);
+    color: var(--color-quartery);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Navbar Start */
+.dark-mode .navbar-container {
+    background: var(--color-quartery);
+}
+
+.dark-mode .logo {
+    color: var(--color-primary);
+}
+
+.dark-mode nav a {
+    color: var(--color-primary);
+}
+.dark-mode nav a:hover {
+    color: var(--color-secondary);
+}
+/* navbar End */
+
+/* home Start */
+.dark-mode .btn-CV {
+    background-color: var(--color-quartery);
+    color: var(--color-primary);
+}
+
+.dark-mode .btn-CV:hover {
+    background-color: var(--color-tertiary);
+    color: var(--color-quartery);
+}
+
+.dark-mode .social-icons a {
+    color: var(--color-quartery);
+}
+
+.dark-mode .social-icons a:hover {
+    color: var(--color-secondary);
+}
+
+/* home End */
+
+/* Skills Start */
+.dark-mode .Skills-Container {
+    background: var(--color-quartery);
+    color: var(--color-primary);
+}
+
+.dark-mode .skill-card-1, .dark-mode .skill-card-2,.dark-mode .skill-card-3, .dark-mode.skill-card-4,
+.dark-mode .skill-card-5, .dark-mode .skill-card-6, .dark-mode .skill-card-7, .dark-mode .skill-card-8 {
+    background-color: var(--color-primary);
+}
+
+/* Skills end */
+
+
+
+
+
+
+/* Responsive  */
+
+/* ketika 1280 */
+
+@media screen and (max-width:1280px) {
+ .Container-Contact h1 {
+    margin-left: 560px;
+ }
+
+ .Container-Contact p {
+    margin-left: 410px;
+ }
+}
+
+
+/* Place Screen Ketika 912px */
+@media screen and (max-width: 912px) {
+
+    .main-container h1 {
+        margin-left: 200px;
+    }
+    .main-container h2 {
+        margin-left: 200px;
+    }
+
+    .main-container article{
+        margin-left: 200px;
+    }
+
+    .social-icons {
+        margin-left: -100px;
+    }
+
+    .btn-CV {
+        margin-left: 200px;
+    }
+
+    .Container-Contact h1 {
+        margin-left: 350px;
+    }
+
+    .Container-Contact p {
+        margin-left: 200px;
+    }
+
+    .Side-Contact-Container {
+        margin-top: 350px;
+        margin-left: 70px;
+    }
+
+}
+
+
+/* Jika Screen sebesar 800px */
+
+@media screen and (max-width: 800px) {
+
+    /* Home Start */
+
+    .main-container h1 {
+        margin-left: 150px;
+    }
+
+    .main-container h2 {
+        margin-left: 150px;
+    }
+
+    .main-container article {
+        margin-left: 150px;
+    }
+
+    .social-icons {
+        margin-left: -160px;
+    }
+
+    .btn-CV {
+        margin-left: 150px;
+    }
+
+    /* Home End */
+
+
+    /* Contact start */
+
+    .Container-Contact h1 {
+        margin-left: 300px;
+    }
+
+    .Container-Contact p {
+        margin-left: 170px;
+    }
+    
+
+    /* Contact end */
+
+}
+
+/* Jika Screen Sebesar 768px */
+@media screen and (max-width: 768px) {
+
+    /* Navbar Start */
+    .navbar-container {
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 5rem;
+        margin: -20px;
+        padding-top: 100px;
+        padding-left: 190px;
+        background-color: #0B192C;
+        height: 120rem;
+        transition: background-color 0.5s ease;
+    }
+
+    nav li {
+        margin:20px;
+    }
+
+    nav a {
+        color: #fff;
+        position: relative;
+        right: 110px;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    .logo {
+        color: #0B192C;
+    }
+
+    .switch {
+        display: none;
+    }
+
+    .Sidebar {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #0B192C;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 1;
+        transition: background-color 0.3s ease, Tras;
+    }
+
+    .Sidebar:hover {
+        background-color: #3a5574;
+    }
+
+    #Close {
+        display: none;
+    }
+
+    /* Navbar End */
+
+    /* Place Screen Start */
+    .main-container h1 {
+        margin-left: 70px;
+    }
+    .main-container h2 {
+        margin-left: 70px;
+    }
+
+    .main-container article{
+        margin-left: 70px;
+    }
+
+    .social-icons {
+        margin-left: -230px;
+    }
+
+    .btn-CV {
+        margin-left: 70px;
+    }
+
+    .Profile {
+        display: none;
+    }
+
+    /* Place Screen End */
+
+
+    /* Skill Section Start */
+    .Skill-Card {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Skill Section End */
+
+    /* Contact Start */
+
+    .Container-Contact h1 {
+        margin-left: 125px;
+    }
+
+    .Container-Contact p {
+        margin-left: 12px;
+    }
+
+    .mb-3 {
+        margin-left: 10px;
+        width: 95%;
+    }
+
+    .btn-submit {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .Side-Contact-Container {
+        margin-top: 350px;
+        margin-left: 20px;
+    }
+}
